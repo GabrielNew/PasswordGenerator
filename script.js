@@ -14,12 +14,12 @@ const generatePassword = () =>
 
     const passwordInput = document.querySelector("#password")
     passwordInput.value = password;
-
-    const passwordLenghtRangeEl = document.querySelector('#password-length')
-
-    passwordLenghtRangeEl.addEventListener('input', function() {
-        passwordLenghtRange = passwordLenghtRangeEl.value
-        generatePassword()
-        console.log('entrei aqui')
-    })
 }
+const passwordLenghtRangeEl = document.querySelector('#password-length')
+
+passwordLenghtRangeEl.addEventListener('input', function() {
+    passwordLenghtRange = passwordLenghtRangeEl.value
+    generatePassword()
+})
+
+generatePassword()
