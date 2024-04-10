@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reset.css" />
     <title>Password Generator</title>
@@ -28,13 +32,15 @@
             <input type="text" name="password" id="password" />
           </div>
           <div class="actions">
-            <button id="copy">C</button>
-            <button id="renew">R</button>
+            <button id="copy-1"><img src="copy.svg" alt="" /></button>
+            <button id="renew"><img src="renew.svg" alt="" /></button>
           </div>
+        </div>
+        <div class="security-indicator">
+          <div id="security-indicator-bar" class="bar safe" style="width: 100%;"></div>
         </div>
       </section>
 
-      
       <input
         type="range"
         name="password-length"
@@ -43,7 +49,7 @@
         min="4"
         max="64"
       />
-      <button id="copyButton">Copy password</button>
+      <button id="copy-2">Copy password</button>
     </main>
     <script src="script.js"></script>
   </body>
