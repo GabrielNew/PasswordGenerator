@@ -37,18 +37,47 @@
           </div>
         </div>
         <div class="security-indicator">
-          <div id="security-indicator-bar" class="bar safe" style="width: 100%;"></div>
+          <div
+            id="security-indicator-bar"
+            class="bar safe"
+            style="width: 100%"
+          ></div>
         </div>
       </section>
 
-      <input
-        type="range"
-        name="password-length"
-        id="password-length"
-        value="8"
-        min="4"
-        max="64"
-      />
+      <section class="box customize">
+        <h3 class="title">Customize</h3>
+        <div class="password-length"></div>
+        <div class="config">
+          <label class="checkbox-container">
+            <span class="text">Maiúsculas</span>
+            <input type="checkbox" id="uppercase-check" checked />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">
+            <span class="text">Símbolos</span>
+            <input type="checkbox" id="symbol-check" checked />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">
+            <span class="text">Números</span>
+            <input type="checkbox" id="numbers-check" checked />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="actions">
+          <p>Size <span id="password-length-text">16</span></p>
+          <input
+            type="range"
+            name="password-length"
+            id="password-length"
+            value="8"
+            min="4"
+            max="64"
+          />
+        </div>
+      </section>
+
       <button id="copy-2">Copy password</button>
     </main>
     <script src="script.js"></script>
