@@ -82,7 +82,7 @@ main {
   transition: all 0.2s;
 }
 
-.security-indicator .bar .completed {
+.security-indicator .bar.completed {
   border-top-right-radius: 0;
 }
 
@@ -189,7 +189,7 @@ main {
   background-color: #cccccc;
 }
 
-.checkbox-container:hover input ~ .checkmark {
+.checkbox-container input:checked ~ .checkmark {
   background-color: #9b51e0;
 }
 
@@ -210,12 +210,11 @@ main {
   display: block;
 }
 
-.submit
-{
+.submit {
   text-align: center;
 }
 
-.submit button{
+.submit button {
   background-color: #bb6db9;
   font-size: 1.375rem;
   color: #fff;
@@ -226,6 +225,6 @@ main {
   transition: all 0.2s;
 }
 
-.submit button:hover{
+.submit button:hover {
   background-color: #9b51e0;
 }
