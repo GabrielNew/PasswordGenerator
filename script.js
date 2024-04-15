@@ -96,6 +96,7 @@ passwordLenghtRangeEl.addEventListener("input", function () {
 upperCaseCheck.addEventListener("click", generatePassword);
 numbersCheck.addEventListener("click", generatePassword);
 symbolsCheck.addEventListener("click", generatePassword);
+document.querySelector("#renew").addEventListener("click", generatePassword);
 
 document.querySelector("#copy-1").addEventListener("click", copyPassword);
 document.querySelector("#copy-2").addEventListener("click", copyPassword);
