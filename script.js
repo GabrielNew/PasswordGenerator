@@ -4,6 +4,7 @@ const upperCaseCheck = document.querySelector("#uppercase-check");
 const symbolsCheck = document.querySelector("#symbol-check");
 const numbersCheck = document.querySelector("#numbers-check");
 const securityIndicatorBar = document.querySelector("#security-indicator-bar");
+const modal = document.querySelector("#myModal");
 
 const generatePassword = () => {
   let chars = "abcdefghjkmnpqrstuvwxyz";
@@ -82,6 +83,8 @@ const calculateFontSize = () => {
 
 const copyPassword = () => {
   navigator.clipboard.writeText(passwordInput.value);
+  modal.style.display = "flex";
+  setTimeout(() => modal.style.display = "none", 2000);
 };
 
 const passwordLenghtRangeEl = document.querySelector("#password-length");

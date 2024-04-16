@@ -66,15 +66,15 @@ main {
   user-select: none;
 }
 
-.password .text input.font-sm{
+.password .text input.font-sm {
   font-size: 2rem;
 }
 
-.password .text input.font-xs{
+.password .text input.font-xs {
   font-size: 1.5rem;
 }
 
-.password .text input.font-xxs{
+.password .text input.font-xxs {
   font-size: 1rem;
 }
 
@@ -241,28 +241,49 @@ main {
   background-color: #9b51e0;
 }
 
-@media only screen and (max-width: 480px){
-  .password{
+@media only screen and (max-width: 480px) {
+  .password {
     padding: 1rem;
   }
 
-  .password .text input{
+  .password .text input {
     font-size: 1.5rem;
   }
 
-  .password .text input.font-sm{
+  .password .text input.font-sm {
     font-size: 1.2rem;
   }
 
-  .password .text input.font-xs{
+  .password .text input.font-xs {
     font-size: 1rem;
   }
 
-  .password .text input.font-xxs{
+  .password .text input.font-xxs {
     font-size: 1rem;
   }
 
-  .password .actions img{
+  .password .actions img {
     width: 24px;
   }
+}
+
+.modal {
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #9b51e0;
+  width: 100%;
+}
+
+.modal-content p{
+  text-align: center;
+  font-weight: bold;
 }
